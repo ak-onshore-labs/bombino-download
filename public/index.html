@@ -8,8 +8,8 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background-color: #000000;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #0b6088;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       min-height: 100vh;
       display: flex;
@@ -24,34 +24,34 @@
     }
 
     .tagline {
-      color: #fec631;
-      font-size: 13px;
+      color: #0b6088;
+      font-size: 14px;
       font-weight: 600;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      margin-bottom: 16px;
+      margin-bottom: 28px;
     }
 
-    h1 {
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 12px;
+    .logo-wrap {
+      margin-bottom: 36px;
     }
 
-    h1 span { color: #fec631; }
+    .logo-wrap img {
+      width: 260px;
+      mix-blend-mode: multiply;
+    }
 
     .sub {
-      color: #888;
+      color: #555;
       font-size: 15px;
-      margin-bottom: 48px;
+      margin-bottom: 40px;
       line-height: 1.6;
     }
 
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
       align-items: center;
     }
 
@@ -59,56 +59,60 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      background: #111111;
-      border: 1px solid #222;
+      background: #ffffff;
+      border: 2px solid #0b6088;
       border-radius: 14px;
-      padding: 16px 28px;
+      padding: 14px 28px;
       text-decoration: none;
-      color: #ffffff;
+      color: #0b6088;
       width: 100%;
       max-width: 260px;
-      transition: border-color 0.2s, background 0.2s;
+      transition: background 0.2s, color 0.2s;
     }
 
     .store-btn:hover {
-      background: #1a1a1a;
-      border-color: #fec631;
+      background: #0b6088;
+      color: #ffffff;
     }
+
+    .store-btn:hover svg path { fill: #ffffff; }
 
     .store-btn svg { flex-shrink: 0; }
 
     .btn-text { text-align: left; }
     .btn-text .small {
       font-size: 11px;
-      color: #666;
+      color: #888;
       display: block;
       margin-bottom: 2px;
     }
-    .btn-text .big {
-      font-size: 16px;
-      font-weight: 600;
-    }
+    .store-btn:hover .btn-text .small { color: #cce4ef; }
+    .btn-text .big { font-size: 16px; font-weight: 700; }
 
     .divider {
       width: 40px;
-      height: 2px;
-      background: #0b6088;
-      margin: 48px auto 0;
+      height: 3px;
+      background: #fec631;
+      margin: 44px auto 0;
       border-radius: 2px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <p class="tagline">India to USA · Courier Express</p>
-    <h1>Bombino <span>Express</span></h1>
+    <p class="tagline">Bringing the world closer</p>
+
+    <div class="logo-wrap">
+      <img src="bombino-logo-01.png" alt="Bombino Express" />
+    </div>
+
     <p class="sub">Scan the QR code on your phone or choose your platform below.</p>
 
     <div class="buttons">
       <!-- App Store -->
       <a class="store-btn" href="https://apps.apple.com/in/app/bombino-expess/id6763043971" target="_blank">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="#ffffff">
-          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        <svg width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#0b6088" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
         </svg>
         <div class="btn-text">
           <span class="small">Download on the</span>
@@ -118,8 +122,15 @@
 
       <!-- Play Store -->
       <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.bombinoexp.app" target="_blank">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fec631">
-          <path d="M3.18 23.76c.3.17.64.22.99.14l12.12-6.99-2.54-2.54-10.57 9.39zm-1.15-20.1C1.73 4.03 1.5 4.4 1.5 4.86v14.28c0 .46.23.83.53 1.2l.07.06 8-8v-.18L2.1 3.6l-.07.06zm18.12 8.64l-2.29-1.32-2.84 2.84 2.84 2.84 2.3-1.33c.66-.38.66-1.65-.01-2.03zM4.17.46L16.29 7.45l-2.54 2.54L3.18.6C3.47.52 3.87.55 4.17.46z"/>
+        <svg width="26" height="26" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fec631" d="M48 432L288 256 48 80v352z"/>
+          <path fill="#0b6088" d="M48 80l240 176-60 44L48 80z"/>
+          <path fill="#0b6088" d="M48 432l180-132 60 44L48 432z"/>
+          <path fill="#0b6088" d="M288 256L464 256 288 256z"/>
+          <path fill="#fec631" d="M288 256l176-104-176 104z"/>
+          <path fill="#fec631" d="M288 256l176 104-176-104z"/>
+          <path fill="#0b6088" d="M228 212l60 44 176-104-236 60z"/>
+          <path fill="#0b6088" d="M228 300l60-44 176 104-236-60z"/>
         </svg>
         <div class="btn-text">
           <span class="small">Get it on</span>
