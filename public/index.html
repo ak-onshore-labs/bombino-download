@@ -41,13 +41,6 @@
       mix-blend-mode: multiply;
     }
 
-    .sub {
-      color: #555;
-      font-size: 15px;
-      margin-bottom: 40px;
-      line-height: 1.6;
-    }
-
     .buttons {
       display: flex;
       flex-direction: column;
@@ -55,39 +48,20 @@
       align-items: center;
     }
 
-    .store-btn {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: #ffffff;
-      border: 2px solid #0b6088;
-      border-radius: 14px;
-      padding: 14px 28px;
-      text-decoration: none;
-      color: #0b6088;
-      width: 100%;
-      max-width: 260px;
-      transition: background 0.2s, color 0.2s;
-    }
-
-    .store-btn:hover {
-      background: #0b6088;
-      color: #ffffff;
-    }
-
-    .store-btn:hover svg path { fill: #ffffff; }
-
-    .store-btn svg { flex-shrink: 0; }
-
-    .btn-text { text-align: left; }
-    .btn-text .small {
-      font-size: 11px;
-      color: #888;
+    .store-link {
       display: block;
-      margin-bottom: 2px;
+      line-height: 0;
+      transition: opacity 0.2s;
     }
-    .store-btn:hover .btn-text .small { color: #cce4ef; }
-    .btn-text .big { font-size: 16px; font-weight: 700; }
+
+    .store-link:hover {
+      opacity: 0.85;
+    }
+
+    .store-link img {
+      height: 52px;
+      width: auto;
+    }
 
     .divider {
       width: 40px;
@@ -106,36 +80,13 @@
       <img src="bombino-logo-01.png" alt="Bombino Express" />
     </div>
 
-    <p class="sub">Scan the QR code on your phone or choose your platform below.</p>
-
     <div class="buttons">
-      <!-- App Store -->
-      <a class="store-btn" href="https://apps.apple.com/in/app/bombino-expess/id6763043971" target="_blank">
-        <svg width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#0b6088" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-        </svg>
-        <div class="btn-text">
-          <span class="small">Download on the</span>
-          <span class="big">App Store</span>
-        </div>
+      <a class="store-link" href="https://apps.apple.com/in/app/bombino-expess/id6763043971" target="_blank" rel="noopener noreferrer">
+        <img src="app-store-badge.png" alt="Download on the App Store" />
       </a>
 
-      <!-- Play Store -->
-      <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.bombinoexp.app" target="_blank">
-        <svg width="26" height="26" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#fec631" d="M48 432L288 256 48 80v352z"/>
-          <path fill="#0b6088" d="M48 80l240 176-60 44L48 80z"/>
-          <path fill="#0b6088" d="M48 432l180-132 60 44L48 432z"/>
-          <path fill="#0b6088" d="M288 256L464 256 288 256z"/>
-          <path fill="#fec631" d="M288 256l176-104-176 104z"/>
-          <path fill="#fec631" d="M288 256l176 104-176-104z"/>
-          <path fill="#0b6088" d="M228 212l60 44 176-104-236 60z"/>
-          <path fill="#0b6088" d="M228 300l60-44 176 104-236-60z"/>
-        </svg>
-        <div class="btn-text">
-          <span class="small">Get it on</span>
-          <span class="big">Google Play</span>
-        </div>
+      <a class="store-link" href="https://play.google.com/store/apps/details?id=com.bombinoexp.app" target="_blank" rel="noopener noreferrer">
+        <img src="google-play-badge.png" alt="Get it on Google Play" />
       </a>
     </div>
 
